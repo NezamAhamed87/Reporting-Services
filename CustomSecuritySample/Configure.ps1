@@ -1,5 +1,5 @@
 ﻿Write-Host "Creating the User Store Database"
-& sqlcmd -S "." -i "Setup\CreateUserStore.Sql"
+& sqlcmd -S "" -i "Setup\CreateUserStore.Sql"
 
 Write-Host "Copying Logon.aspx page `n" -ForegroundColor Green
 Copy-Item -Path Logon.aspx -Destination "C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\"

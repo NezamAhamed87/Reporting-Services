@@ -6,7 +6,7 @@
       <Value Profile="(Default)">http://localhost:80/ReportServer_SQL2014/ReportService2010.asmx</Value>
     </Setting>
     <Setting Name="Database_ConnectionString" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Server=localhost; Integrated Security=SSPI;database=UserAccounts</Value>
+      <Value Profile="(Default)">Server=172.16.225.6; database=DEV; Database=DEV;user id=NJabbar; password=Protech01;</Value>
     </Setting>
   </Settings>
 </SettingsFile>

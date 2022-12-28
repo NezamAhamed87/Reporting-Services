@@ -52,7 +52,7 @@ namespace Microsoft.Samples.ReportingServices.CustomSecurity
 
       private void Page_Load(object sender, System.EventArgs e)
       {
-
+            
       }
 
       #region Web Form Designer generated code
@@ -105,8 +105,8 @@ namespace Microsoft.Samples.ReportingServices.CustomSecurity
          bool passwordVerified = false;
          try
          {
-            passwordVerified = 
-               AuthenticationUtilities.VerifyPassword(TxtUser.Text,TxtPwd.Text);
+                passwordVerified = AuthenticationExtension.VerifyUser(TxtUser.Text);
+                //passwordVerified = AuthenticationUtilities.VerifyPassword(TxtUser.Text,TxtPwd.Text);
             if (passwordVerified)
             {
                FormsAuthentication.RedirectFromLoginPage(
